@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/estatery-website/static/css/main.cb1ed797.css",
-    "main.js": "/estatery-website/static/js/main.7304f7c2.js",
+    "main.js": "/estatery-website/static/js/main.88474d07.js",
     "static/js/453.82b37f4f.chunk.js": "/estatery-website/static/js/453.82b37f4f.chunk.js",
     "static/media/house-1.jpeg": "/estatery-website/static/media/house-1.ad1eb9537f1e9344c76d.jpeg",
     "static/media/map-illustration.png": "/estatery-website/static/media/map-illustration.951fcdcdf8ffca2091ad.png",
@@ -18,11 +18,11 @@
     "static/media/menu-icon.svg": "/estatery-website/static/media/menu-icon.7f3b21da1b026880ea11e4d831746296.svg",
     "static/media/close-menu-icon.svg": "/estatery-website/static/media/close-menu-icon.c90eb7af72b70c6d1ae1bd8e7792f53a.svg",
     "main.cb1ed797.css.map": "/estatery-website/static/css/main.cb1ed797.css.map",
-    "main.7304f7c2.js.map": "/estatery-website/static/js/main.7304f7c2.js.map",
+    "main.88474d07.js.map": "/estatery-website/static/js/main.88474d07.js.map",
     "453.82b37f4f.chunk.js.map": "/estatery-website/static/js/453.82b37f4f.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.cb1ed797.css",
-    "static/js/main.7304f7c2.js"
+    "static/js/main.88474d07.js"
   ]
 }
