@@ -40,7 +40,7 @@ function Hero() {
           <div className="hero__illustration-wrapper">
             <Card
               className="hero__example-card"
-              image="/images/house-1.jpeg"
+              image={`${process.env.PUBLIC_URL}/images/appartments-1.jpeg`}
               title="Palm Harbor"
               price="$3,440"
               address="2699 Green Valley, Highland Lake, FL"
