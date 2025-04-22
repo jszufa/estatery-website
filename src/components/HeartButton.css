@@ -1,0 +1,51 @@
+.heart-button {
+  height: 48px;
+  width: 48px;
+}
+
+.heart-button__outline {
+  position: relative;
+  height: 100%;
+  width: 100%;
+  border: 1px solid #eaecf4;
+  border-radius: 50%;
+  background-color: #fff;
+  transition: all 0.3s ease;
+}
+
+.heart-shape__path {
+  transition: all 0.3s ease;
+}
+
+.heart-button:hover .heart-button__outline,
+.heart-button:focus .heart-button__outline,
+.heart-button:active .heart-button__outline {
+  border-color: #8b8aff;
+}
+
+.heart-button:hover .heart-shape__path,
+.heart-button:focus .heart-shape__path {
+  stroke: #3d1efe;
+}
+
+.heart-button:focus .heart-button__outline {
+  background-color: rgba(61, 30, 254, 0.2);
+}
+
+.heart-button:active .heart-shape__path {
+  stroke: white;
+}
+
+.heart-button:active .heart-button__outline {
+  background-color: #6851ff;
+}
+
+.heart-button .heart-shape {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  height: 24px;
+  width: 24px;
+  z-index: 20;
+}

@@ -1,0 +1,42 @@
+.desktop-menu {
+  display: none;
+}
+
+.desktop-menu__container {
+  display: flex;
+  justify-content: space-betwen;
+  align-items: center;
+  gap: 40px;
+}
+
+.desktop-menu__menu {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 34px;
+  font-weight: 500;
+  list-style: none;
+  font-size: 16px;
+  font-weight: 500;
+}
+
+.desktop-menu__menu li {
+  cursor: pointer;
+  transition: color 0.2s ease;
+}
+
+.desktop-menu__menu li:hover {
+  color: #6851ff;
+}
+
+.desktop-menu__buttons {
+  display: flex;
+  flex-direction: row;
+  gap: 24px;
+}
+
+@media (min-width: 1020px) {
+  .desktop-menu {
+    display: block;
+  }
+}

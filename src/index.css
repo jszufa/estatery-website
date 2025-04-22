@@ -1,0 +1,41 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: "Plus Jakarta Sans", sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: #fff;
+  height: 100%;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
+}
+
+button {
+  all: unset;
+  cursor: pointer;
+}
+
+.hidden {
+  display: none;
+}
+
+h1 {
+  color: #000;
+  font-size: 40px;
+  font-weight: 700;
+  letter-spacing: -0.4px;
+}
+
+@media (min-width: 798px) {
+  h1 {
+    font-size: 52px;
+  }
+}

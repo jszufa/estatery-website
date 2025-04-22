@@ -1,0 +1,65 @@
+.custom-dots {
+  display: flex !important;
+  justify-content: center;
+  gap: 28px;
+  position: relative !important;
+}
+
+.slick-slider .custom-dots li {
+  height: 60px;
+  width: 60px;
+}
+
+.custom-dot {
+  width: 62x;
+  height: 62px;
+  border-radius: 50%;
+  transition: 0.3s;
+  z-index: 20;
+  position: relative;
+  background: white;
+  padding: 2px;
+}
+
+.custom-dots li::after {
+  content: "";
+  position: absolute;
+  top: -2px;
+  left: -2px;
+  width: 66px;
+  height: 66px;
+  background: conic-gradient(#6851ff 0deg 250deg, transparent 250deg 360deg);
+  border-radius: 50%;
+  opacity: 0;
+  transform: scale(0.9);
+  z-index: 10;
+  transition: all 0.3s ease-out;
+}
+
+.custom-dots li.slick-active::after {
+  opacity: 1;
+  transform: scale(1);
+}
+
+.testimonial-slide {
+  text-align: center;
+}
+
+.testimonial-text {
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 160%; /* 32px */
+  letter-spacing: -0.1px;
+}
+
+.testimonial-name {
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 150%;
+}
+
+.testimonial-role {
+  font-weight: 400;
+  color: #7b8191;
+}

@@ -1,0 +1,20 @@
+.testimonials-section {
+  padding-bottom: 80px;
+  padding-left: 32px;
+  padding-right: 32px;
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0) 0%, #f4effe 100%);
+}
+
+.testimonials-container {
+  max-width: 736px;
+  margin: 0 auto;
+}
+
+.testimonials-section header p {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 160%;
+  opacity: 0.7;
+  color: #000;
+  text-align: center;
+}

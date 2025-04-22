@@ -1,0 +1,84 @@
+.main-footer {
+  display: flex;
+  flex-direction: column;
+  padding: 32px;
+  padding-top: 0;
+}
+
+.main-footer a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.main-footer .footer-content {
+  display: flex;
+  flex-direction: column;
+  /* justify-content: space-between;
+  align-items: center; */
+}
+
+.main-footer .footer-menu {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 32px;
+  row-gap: 20px;
+  text-transform: uppercase;
+  font-weight: 500;
+  color: rgba(0, 0, 0, 0.5);
+}
+
+.main-footer hr {
+  color: rgba(0, 0, 0, 0.5);
+}
+
+.main-footer .footer-bottom {
+  color: rgba(0, 0, 0, 0.5);
+}
+
+.main-footer .footer-bottom p {
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 160%;
+  text-align: center;
+  margin-bottom: 24px;
+}
+
+.main-footer .footer-bottom .footer-links {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+}
+
+.main-footer .footer-bottom .footer-links i {
+  width: 24px;
+  height: 24px;
+  color: rgba(0, 0, 0, 0.3);
+}
+
+.main-footer hr {
+  border: none; /* Usuwa domyślne obramowanie */
+  border-top: 1px solid #e8e6f9; /* Ustawia górną krawędź jako linię */
+  margin-top: 20px;
+  margin-bottom: 8px;
+  height: 0; /* Zapobiega niechcianej wysokości */
+  width: 100%; /* Długość linii */
+}
+
+@media (min-width: 692px) {
+  .main-footer {
+    padding-top: 40px;
+  }
+
+  .main-footer .footer-content {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .main-footer .footer-info {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+}

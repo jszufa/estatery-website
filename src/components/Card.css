@@ -1,0 +1,65 @@
+.card {
+  border-radius: 8px;
+  border: 1px solid #eaecf4;
+  background: #fff;
+  width: 352px;
+  height: 364px;
+}
+
+.card__img {
+  height: 50%;
+  width: 100%;
+  background-size: cover;
+  background-position: center;
+  border-radius: 8px 8px 0 0;
+}
+
+h4 {
+  all: unset;
+  font-size: 24px;
+  font-weight: 700;
+  letter-spacing: -0.24px;
+}
+
+.card__title {
+  color: #000929;
+}
+
+.card p {
+  color: #000929;
+  font-size: 16px;
+  font-weight: 500;
+  opacity: 0.5;
+}
+
+.card__content {
+  padding: 24px;
+  position: relative;
+}
+
+.card__price {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 2px;
+}
+
+.card__price span {
+  color: #6851ff;
+  font-size: 24px;
+  font-weight: 800;
+  letter-spacing: -1px;
+}
+
+.card__heart-button {
+  position: absolute;
+  top: 32px;
+  right: 24px;
+}
+
+.house-1 {
+  background-image: url("../img/house-1.jpeg");
+}
+
+/* //poprawić heart button uzywając diva z okrągłym obramowaniem jako kontenera dla ikony
+// to uprości znacznie kod */

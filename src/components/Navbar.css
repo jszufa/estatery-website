@@ -1,0 +1,21 @@
+.main__navbar {
+  height: 72px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 32px;
+}
+
+.navbar__hamburger-btn {
+  padding-top: 8px;
+  z-index: 110;
+  position: fixed;
+  top: 16px;
+  right: 32px;
+}
+
+@media (min-width: 1020px) {
+  .navbar__hamburger-btn {
+    display: none;
+  }
+}

@@ -1,0 +1,192 @@
+.hero__header-background {
+  background-image: url("../img/gradient-background.svg");
+  background-position: left bottom;
+  background-repeat: no-repeat;
+  background-size: 473px 488px;
+  padding: 0 32px;
+  position: relative; /* Umożliwia pozycjonowanie overlay */
+  z-index: 10; /* Zapewnia, że tło będzie pod overlay */
+}
+
+.hero__header-background::after {
+  content: ""; /* Tworzy pseudo-element */
+  position: absolute; /* Pozycjonowanie absolutne względem rodzica */
+  inset: 0; /* Przykładowy kolor tła z przezroczystością */
+  background: rgba(255, 255, 255, 0.3);
+  backdrop-filter: blur(50px);
+  z-index: 20; /* Zapewnia, że overlay będzie nad innymi elementami */
+}
+
+.hero__header-background .hero__header-content {
+  z-index: 30; /* Zapewnia, że treść będzie nad overlay */
+  position: relative; /* Umożliwia pozycjonowanie treści */
+}
+
+.main-header {
+  text-align: center;
+  padding: 34px 0;
+}
+
+.main-header p {
+  color: #000;
+  font-size: 20px;
+  font-weight: 500;
+  letter-spacing: -0.1px;
+}
+
+.hero__numbers {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 32px;
+  margin-bottom: 17px;
+  margin-top: 34px;
+}
+
+.hero__numbers h3 {
+  margin: 0;
+  color: #6851ff;
+  font-size: 32px;
+  font-weight: 700;
+  word-wrap: break-word;
+}
+
+.hero__numbers p {
+  margin: 0;
+  color: #7b8191;
+  font-size: 16px;
+  font-weight: 500;
+  word-wrap: break-word;
+}
+
+.hero__numbers__element {
+  display: flex;
+  gap: 24px;
+}
+
+.hero__numbers__separator {
+  height: 68px;
+  background-color: #d6d8e5;
+  width: 3px;
+}
+
+.hero__illustration-section {
+  padding: 0 32px;
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+}
+
+.hero__illustration-container {
+  padding-left: 20px;
+  width: 100%;
+}
+
+.hero__illustration-wrapper {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  padding-top: 100%;
+}
+
+.hero__illustration-wrapper img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: 10;
+}
+
+.hero__illustration-wrapper .card.hero__example-card {
+  position: absolute;
+  left: -20px;
+  top: 50%;
+  transform: translate(-25%, -50%) scale(0.5);
+  z-index: 20;
+}
+
+.hero__illustration-wrapper .card.hero__example-card .card__heart-button {
+  display: none;
+}
+
+@media (min-width: 520px) {
+  .hero__illustration-wrapper .card.hero__example-card {
+    left: 20px;
+    transform: translate(-25%, -50%) scale(0.7);
+  }
+}
+
+@media (min-width: 798px) {
+  .hero__illustration-wrapper .card.hero__example-card {
+    left: 40px;
+    transform: translate(-25%, -50%) scale(0.9);
+  }
+
+  h1 {
+    font-size: 52px;
+  }
+}
+
+@media (max-width: 1020px) {
+  .hero__illustration-container {
+    max-width: 700px;
+  }
+}
+
+@media (min-width: 1020px) {
+  .hero-section {
+    display: flex;
+    max-height: 700px;
+    overflow: hidden;
+  }
+
+  .hero__header-background {
+    flex: 1.1;
+  }
+
+  .hero__illustration-section {
+    flex: 0.9;
+    padding: 0;
+    margin-top: 0;
+  }
+
+  .hero__illustration-container {
+    padding-left: 0;
+    width: 100%;
+  }
+
+  .main-header {
+    text-align: left;
+    margin-left: 70px;
+    max-width: 500px;
+  }
+
+  h1 {
+    font-size: 56px;
+    letter-spacing: -0.64px;
+    line-height: 110%;
+  }
+
+  .hero__numbers {
+    justify-content: flex-start;
+    margin-top: 80px;
+  }
+
+  .hero__illustration-wrapper .card.hero__example-card {
+    left: 20px;
+    transform: translate(-25%, -50%) scale(0.8);
+  }
+}
+
+@media (min-width: 1420px) {
+  h1 {
+    font-size: 64px;
+  }
+
+  .hero__illustration-wrapper .card.hero__example-card {
+    left: 20px;
+    transform: translate(-25%, -50%) scale(1);
+  }
+}

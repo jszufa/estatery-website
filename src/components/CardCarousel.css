@@ -1,0 +1,9 @@
+.card-carousel-wrapper .slick-slide > div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.card-carousel-wrapper .slick-slide {
+  padding: 15px;
+}

@@ -1,0 +1,42 @@
+.full-screen-menu {
+  position: fixed;
+  inset: 0;
+  overflow-y: auto;
+  background: rgba(255, 255, 255, 0.68);
+  backdrop-filter: blur(20px);
+  z-index: 100;
+}
+
+.full-screen-menu__container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 32px;
+  padding-top: 120px;
+  min-height: 100vh;
+}
+
+.full-screen-menu__menu {
+  display: flex;
+  list-style: none;
+  padding: 0;
+  flex-direction: column;
+  gap: 34px;
+  font-size: 26px;
+  font-weight: 500;
+}
+
+.full-screen-menu__menu li {
+  cursor: pointer;
+  transition: color 0.2s ease;
+}
+
+.full-screen-menu__menu li:hover {
+  color: #6851ff;
+}
+
+.full-screen-menu__buttons {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
