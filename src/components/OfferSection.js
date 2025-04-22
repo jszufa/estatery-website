@@ -8,19 +8,19 @@ function OfferSection() {
 
   const housesData = [
     {
-      image: "/images/house-1.jpeg",
+      image: `${process.env.PUBLIC_URL}/images/house-1.jpeg`,
       title: "Palm Harbor",
       price: "$3,440",
       address: "2699 Green Valley, Highland Lake, FL",
     },
     {
-      image: "/images/house-2.jpeg",
+      image: `${process.env.PUBLIC_URL}/images/house-2.jpeg`,
       title: "St. Crystal",
       price: "$6,550",
       address: "210 US Highway, Highland Lake, FL",
     },
     {
-      image: "/images/house-3.jpeg",
+      image: `${process.env.PUBLIC_URL}/images/house-3.jpeg`,
       title: "Faulkner Ave",
       price: "$4,950",
       address: "909 Woodland St, Michigan, IN",
@@ -29,19 +29,19 @@ function OfferSection() {
 
   const apartmentsData = [
     {
-      image: "/images/appartments-1.jpeg",
+      image: `${process.env.PUBLIC_URL}/images/appartments-1.jpeg`,
       title: "Tarpon Bay",
       price: "$2,140",
       address: "103 Lake Shores, Michigan, IN",
     },
     {
-      image: "/images/appartments-2.jpeg",
+      image: `${process.env.PUBLIC_URL}/images/appartments-2.jpeg`,
       title: "Cove Red",
       price: "$1,440",
       address: "243 Curlew Road, Palm Harbor, TX",
     },
     {
-      image: "/images/appartments-3.jpeg",
+      image: `${process.env.PUBLIC_URL}/images/appartments-3.jpeg`,
       title: "Beverley Springfield",
       price: "$3,850",
       address: "2821 Lake Sevilla, Palm Harbor, TX",
